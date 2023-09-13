@@ -26,5 +26,6 @@ pipeline {
         }
         failure {
             sh 'cp -f /var/lib/jenkins/workspace/jenkins /home/ubuntu/deployment/'
+        }
     }
 }
