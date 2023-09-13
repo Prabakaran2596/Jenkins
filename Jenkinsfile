@@ -17,5 +17,12 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        
+    }
+    post {
+        success {
+            sh 'cp -r /var/lib/jenkins/workspace/jenkins /home/ubuntu/deployment/'
+            
+        }
     }
 }
